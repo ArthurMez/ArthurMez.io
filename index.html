@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arthur Mézange | Développeur</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -15,19 +15,21 @@
                 <li><a href="#presentation">Présentation</a></li>
                 <li><a href="#projets-academiques">Académique</a></li>
                 <li><a href="#projets-perso">Personnel</a></li>
-                <li><a href="dowload/CV_arthur_mezange.pdf" class="btn-cv" download>Télécharger CV</a></li>
+                <li><a href="assets/docs/CV_arthur_mezange.pdf" class="btn-cv" download>Télécharger CV</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section id="presentation" class="hero">
-            <h1>Développeur Étudiant</h1>
+            <h1>Étudiant Développeur</h1>
             <p>Actuellement en <strong>BUT Informatique à l'IUT de Nantes</strong>. Curieux et travailleur, j'apprends vite et j'aime relever des défis en équipe.</p>
             <div class="tags">
                 <span>Golang</span>
                 <span>Python</span> 
-                <span>HTML/CSS</span> 
+                <span>HTML/CSS</span>
+                <span>Kotlin</span>
+                <span>SQL</span> 
             </div>
         </section>
 
@@ -42,8 +44,18 @@
                 <div class="card">
                     <h3>Création d'un jeu de carte</h3>
                     <p>Projet réalisé dans le cadre d'un travail de groupe en économie</p>
-                    <span class="tech">HTML / CSS</span>
+                    <span class="tech">Python</span>
                 </div>
+                    <div class="card" 
+                        data-title="Système de Particules" 
+                        data-desc="Développement d'un système de particules." 
+                        data-tech="Golang"
+                        data-img="assets/img/particules.jpg"
+                        data-repo="https://github.com/ArthurMez/ProjetParticule">
+                        <h3>Système de Particules</h3>
+                        <p>Projet de développement technique (SAÉ).</p>
+                        <span class="tech">Golang</span>
+                    </div>
             </div>
         </section>
 
@@ -62,5 +74,29 @@
     <footer>
         <p>Contact : arthur.mezange@orange.fr | 06 02 11 97 88</p>
     </footer>
+
+    <!--Fenetre des projets-->
+    <!-- La Modale -->
+<!-- La Modale -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            
+            <!-- Nouvelle image -->
+            <img id="modal-img" src="" alt="Aperçu du projet" class="modal-image">
+            
+            <h2 id="modal-title">Titre du projet</h2>
+            <p id="modal-desc">Description détaillée ici...</p>
+            <span id="modal-tech" class="tech"></span>
+            
+            <!-- Nouveau bouton GitHub -->
+            <br>
+            <a id="modal-repo" href="#" target="_blank" class="btn-repo">Voir sur GitHub</a>
+        </div>
+    </div>
+
+
+
+    <script src="js/main.js"></script>
 </body>
 </html>
