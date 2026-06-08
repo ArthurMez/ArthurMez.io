@@ -172,8 +172,39 @@ footer {
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
+    z-index: 10; /* Garde la croix au premier plan */
 }
 
 .close-btn:hover {
     color: var(--text-color);
+}
+
+/* Style de l'image dans la modale */
+.modal-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain; /* L'image rentre sans être coupée */
+    border-radius: 8px;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    display: none;
+}
+
+/* Style du bouton GitHub */
+.btn-repo {
+    display: none;
+    background-color: #24292e;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.btn-repo:hover {
+    background-color: #000;
+    color: white;
 }
